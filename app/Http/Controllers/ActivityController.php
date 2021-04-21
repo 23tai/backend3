@@ -64,7 +64,7 @@ class ActivityController extends Controller
         // どの人の詳細を表示させるかをuser_idで受け取ってその人のアカウントを取得
         $hisAccount = User::find($user_id);
 
-
+      
         return view('myService.details')->with([
             'identify_id' => $identify_id,
             'hisAccount' => $hisAccount,
